@@ -14,4 +14,10 @@ class Board
     end
   end
 
+  def activate_cell(coordinate)
+    if flag_grid[coordinate[0]][coordinate[1]].nil?
+      flag_grid[coordinate[0]][coordinate[1]] = "M"
+    end
+  end
+
 end
